@@ -19,12 +19,12 @@ not_defended(X) :- att(Y,X), not defeated(Y).\n"
 STABLE_ASP = "out(X) :- defeated(X).\n\
 in(X) :- arg(X), not out(X).\n"
 
-ADMISSIBLE_ASP = " :- not_defended(X), not out(X).\n\
+ADMISSIBLE_ASP = "out(X) :- defeated(X).\n\
 out(X) :- arg(X), not in(X).\n\
-in(X) :- arg(X), not out(X), not defeated(X).\n"
+in(X) :- arg(X), not out(X), not not_defended(X).\n"
 
 COMPLETE_ASP = "out(X) :- not_defended(X).\n\
-in(X) :- arg(X), not defeated(X), not not_defended(X).\n"
+in(X) :- arg(X), not out(X), not defeated(X).\n"
 
 # Construct ASPARTIX solution for each semantics to use as baseline
 STABLE_ASPARTIX = ":- out(X), not defeated(X).\n"
