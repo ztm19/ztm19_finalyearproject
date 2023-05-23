@@ -53,6 +53,7 @@ def print_answers(asp, semantics):
     '''
     print(f"{semantics} semantics")
     answers = ASP(asp)
+    i = 1
 
     for answer in answers:
         print(f"Accepted arguments - possibility {i}:")
@@ -69,6 +70,8 @@ def print_answers(asp, semantics):
                 print(node["text"])
 
         print(f"-------------------------------")
+
+        i += 1
 
 
 print_answers(asp_encoding+STABLE, "Stable")
