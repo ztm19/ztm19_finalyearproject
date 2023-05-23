@@ -1,0 +1,86 @@
+{
+  "nodes": [
+    {
+      "id": "node_m0c0",
+      "clauseReferences": [[0, 0]],
+      "person": "assistant",
+      "text": "Government power should be feared"
+    },
+    {
+      "id": "node_m1c0",
+      "clauseReferences": [[1, 0]],
+      "person": "A",
+      "text": "I do not believe government power should be feared"
+    },
+    {
+      "id": "node_m1c1",
+      "clauseReferences": [[1, 1]],
+      "person": "A",
+      "text": "At least in the US"
+    },
+    {
+      "id": "node_m2c0",
+      "clauseReferences": [[2, 0]],
+      "person": "B",
+      "text": "Government power should be trusted and respected"
+    },
+    {
+      "id": "node_m2c1",
+      "clauseReferences": [[2, 1]],
+      "person": "B",
+      "text": "As Government power has been the foundation of the US success."
+    },
+    {
+      "id": "node_m3c0",
+      "clauseReferences": [[3, 0]],
+      "person": "A",
+      "text": "The government uses its power"
+    },
+    {
+      "id": "node_m3c1",
+      "clauseReferences": [[3, 1]],
+      "person": "A",
+      "text": "The government's power benefits the US."
+    }
+  ],
+  "links": [
+    { "relationship": "support", "source": "node_m0c0", "target": "node_m3c0" },
+    { "relationship": "attack", "source": "node_m1c1", "target": "node_m1c0" },
+    { "relationship": "attack", "source": "node_m1c0", "target": "node_m0c0" },
+    { "relationship": "attack", "source": "node_m2c0", "target": "node_m0c0" },
+    { "relationship": "support", "source": "node_m3c1", "target": "node_m3c0" },
+    { "relationship": "support", "source": "node_m2c1", "target": "node_m2c0" }
+  ],
+  "ignored": [],
+  "messages": [
+    {
+      "person": "assistant",
+      "text": "Government power should be feared",
+      "clauses": ["Government power should be feared"]
+    },
+    {
+      "person": "A",
+      "text": "I do not believe government power should be feared, at least in the US.",
+      "clauses": [
+        "I do not believe government power should be feared",
+        "At least in the US"
+      ]
+    },
+    {
+      "person": "B",
+      "text": "Government power should be trusted and respected, as it has been the foundation of our nation's success.",
+      "clauses": [
+        "Government power should be trusted and respected",
+        "As Government power has been the foundation of the US success."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "The government uses its power to benefit the nation.",
+      "clauses": [
+        "The government uses its power",
+        "The government's power benefits the US."
+      ]
+    }
+  ]
+}

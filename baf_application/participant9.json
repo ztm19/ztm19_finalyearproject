@@ -1,0 +1,218 @@
+{
+  "nodes": [
+    {
+      "id": "node_m9c0_m10c0_m6c0_m0c0",
+      "clauseReferences": [
+        [9, 0],
+        [10, 0],
+        [6, 0],
+        [0, 0]
+      ],
+      "person": "assistant",
+      "text": "Government power should not be feared"
+    },
+    {
+      "id": "node_m1c0_m7c0_m5c0_m8c0",
+      "clauseReferences": [
+        [1, 0],
+        [7, 0],
+        [5, 0],
+        [8, 0]
+      ],
+      "person": "A",
+      "text": "Government power should be feared"
+    },
+    {
+      "id": "node_m1c1",
+      "clauseReferences": [[1, 1]],
+      "person": "A",
+      "text": "If government power is not held accountable"
+    },
+    {
+      "id": "node_m2c0_m2c1",
+      "clauseReferences": [
+        [2, 0],
+        [2, 1]
+      ],
+      "person": "B",
+      "text": "Government power is necessary to protect citizens"
+    },
+    {
+      "id": "node_m8c1_m10c1_m3c0",
+      "clauseReferences": [
+        [8, 1],
+        [10, 1],
+        [3, 0]
+      ],
+      "person": "A",
+      "text": "Absolute government power without accountability leads to corruption"
+    },
+    {
+      "id": "node_m4c0",
+      "clauseReferences": [[4, 0]],
+      "person": "A",
+      "text": "Government power led by the people shouldn't be feared"
+    },
+    {
+      "id": "node_m5c1",
+      "clauseReferences": [[5, 1]],
+      "person": "A",
+      "text": "A people-led government should not be feared"
+    },
+    {
+      "id": "node_m6c1",
+      "clauseReferences": [[6, 1]],
+      "person": "B",
+      "text": "When Government power is transparent"
+    },
+    {
+      "id": "node_m6c2",
+      "clauseReferences": [[6, 2]],
+      "person": "B",
+      "text": "Government power should be held accountable to the people"
+    },
+    {
+      "id": "node_m6c3",
+      "clauseReferences": [[6, 3]],
+      "person": "B",
+      "text": "Government power should be used for its intended purpose of protecting citizens and maintaining order."
+    },
+    {
+      "id": "node_m9c1",
+      "clauseReferences": [[9, 1]],
+      "person": "B",
+      "text": "Government power is used for its intended purpose"
+    },
+    {
+      "id": "node_m9c2",
+      "clauseReferences": [[9, 2]],
+      "person": "B",
+      "text": "With oversight and accountability from the people"
+    }
+  ],
+  "links": [
+    {
+      "relationship": "attack",
+      "source": "node_m1c0_m7c0_m5c0_m8c0",
+      "target": "node_m9c0_m10c0_m6c0_m0c0"
+    },
+    {
+      "relationship": "attack",
+      "source": "node_m2c0_m2c1",
+      "target": "node_m1c0_m7c0_m5c0_m8c0"
+    },
+    {
+      "relationship": "attack",
+      "source": "node_m4c0",
+      "target": "node_m1c0_m7c0_m5c0_m8c0"
+    },
+    { "relationship": "attack", "source": "node_m6c1", "target": "node_m1c1" },
+    {
+      "relationship": "attack",
+      "source": "node_m6c2",
+      "target": "node_m9c0_m10c0_m6c0_m0c0"
+    },
+    {
+      "relationship": "attack",
+      "source": "node_m6c3",
+      "target": "node_m1c0_m7c0_m5c0_m8c0"
+    },
+    { "relationship": "attack", "source": "node_m9c1", "target": "node_m1c1" },
+    { "relationship": "support", "source": "node_m1c1", "target": "node_m6c2" },
+    {
+      "relationship": "support",
+      "source": "node_m8c1_m10c1_m3c0",
+      "target": "node_m1c1"
+    },
+    { "relationship": "support", "source": "node_m9c2", "target": "node_m6c2" },
+    {
+      "relationship": "attack",
+      "source": "node_m5c1",
+      "target": "node_m1c0_m7c0_m5c0_m8c0"
+    }
+  ],
+  "ignored": [],
+  "messages": [
+    {
+      "person": "assistant",
+      "text": "Government power should not be feared",
+      "clauses": ["Government power should not be feared"]
+    },
+    {
+      "person": "A",
+      "text": "government power should be feared if not held accountavble",
+      "clauses": [
+        "Government power should be feared",
+        "If government power is not held accountable"
+      ]
+    },
+    {
+      "person": "B",
+      "text": "Government power is necessary to protect citizens and maintain order.",
+      "clauses": [
+        "Government power is necessary to protect citizens",
+        "Government power is necessary to maintain order."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "absolute government power without accountability leads to corruption",
+      "clauses": [
+        "Absolute government power without accountability leads to corruption"
+      ]
+    },
+    {
+      "person": "A",
+      "text": "government power led by the people shouldn't be feared",
+      "clauses": ["Government power led by the people shouldn't be feared"]
+    },
+    {
+      "person": "A",
+      "text": "government power should be feared, a people led government should not",
+      "clauses": [
+        "Government power should be feared",
+        "A people-led government should not be feared"
+      ]
+    },
+    {
+      "person": "B",
+      "text": "Government power should not be feared when it is transparent, held accountable to the people, and used for its intended purpose of protecting citizens and maintaining order.",
+      "clauses": [
+        "Government power should not be feared",
+        "When Government power is transparent",
+        "Government power should be held accountable to the people",
+        "Government power should be used for its intended purpose of protecting citizens and maintaining order."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "therefore government power should be fear",
+      "clauses": ["Government power should be feared"]
+    },
+    {
+      "person": "A",
+      "text": "government power by itself should be feared or it will lead to curruption",
+      "clauses": [
+        "Government power should be feared",
+        "Or government power will lead to corruption"
+      ]
+    },
+    {
+      "person": "B",
+      "text": "Government power should not be feared when it is used for its intended purpose, with oversight and accountability from the people.",
+      "clauses": [
+        "Government power should not be feared",
+        "Government power is used for its intended purpose",
+        "With oversight and accountability from the people"
+      ]
+    },
+    {
+      "person": "A",
+      "text": "government power should not be feared leads to revolution",
+      "clauses": [
+        "Government power should not be feared",
+        "Fear of government power leads to revolution"
+      ]
+    }
+  ]
+}

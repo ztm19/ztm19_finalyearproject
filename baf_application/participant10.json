@@ -1,0 +1,389 @@
+{
+  "nodes": [
+    {
+      "id": "node_m5c2_m9c0_m2c0_m0c0",
+      "clauseReferences": [
+        [5, 2],
+        [9, 0],
+        [2, 0],
+        [0, 0]
+      ],
+      "person": "assistant",
+      "text": "More people should be encouraged to go to University"
+    },
+    {
+      "id": "node_m1c0",
+      "clauseReferences": [[1, 0]],
+      "person": "A",
+      "text": "I do not agree"
+    },
+    {
+      "id": "node_m1c1",
+      "clauseReferences": [[1, 1]],
+      "person": "A",
+      "text": "Because some people need job training."
+    },
+    {
+      "id": "node_m9c1_m2c1",
+      "clauseReferences": [
+        [9, 1],
+        [2, 1]
+      ],
+      "person": "B",
+      "text": "As the education provided at University is often essential for pursuing a successful career."
+    },
+    {
+      "id": "node_m3c0",
+      "clauseReferences": [[3, 0]],
+      "person": "A",
+      "text": "Some people need technical training"
+    },
+    {
+      "id": "node_m3c1",
+      "clauseReferences": [[3, 1]],
+      "person": "A",
+      "text": "Like for electricians"
+    },
+    {
+      "id": "node_m4c0_m10c1",
+      "clauseReferences": [
+        [4, 0],
+        [10, 1]
+      ],
+      "person": "A",
+      "text": "Electricians do not need to go to college"
+    },
+    {
+      "id": "node_m5c0",
+      "clauseReferences": [[5, 0]],
+      "person": "B",
+      "text": "I am in full support of encouraging more people to pursue a university education"
+    },
+    {
+      "id": "node_m5c1",
+      "clauseReferences": [[5, 1]],
+      "person": "B",
+      "text": "A university education provides a valuable base of knowledge and skill"
+    },
+    {
+      "id": "node_m5c3",
+      "clauseReferences": [[5, 3]],
+      "person": "B",
+      "text": "A university education will be essential for more people to pursue technical fields such as electrical engineering."
+    },
+    {
+      "id": "node_m6c0",
+      "clauseReferences": [[6, 0]],
+      "person": "A",
+      "text": "There are high school programs"
+    },
+    {
+      "id": "node_m6c1",
+      "clauseReferences": [[6, 1]],
+      "person": "A",
+      "text": "There is on the job training."
+    },
+    {
+      "id": "node_m7c0",
+      "clauseReferences": [[7, 0]],
+      "person": "B",
+      "text": "Universities offer an opportunity for individuals to obtain a comprehensive education"
+    },
+    {
+      "id": "node_m7c1",
+      "clauseReferences": [[7, 1]],
+      "person": "B",
+      "text": "This comprehensive education may be more beneficial than any high school program or on the job training."
+    },
+    {
+      "id": "node_m8c0",
+      "clauseReferences": [[8, 0]],
+      "person": "A",
+      "text": "To obtain a degre"
+    },
+    {
+      "id": "node_m8c1",
+      "clauseReferences": [[8, 1]],
+      "person": "A",
+      "text": "ou have to take courses"
+    },
+    {
+      "id": "node_m8c2_m9c2",
+      "clauseReferences": [
+        [8, 2],
+        [9, 2]
+      ],
+      "person": "A",
+      "text": "Some courses have nothing to do with your choice of degree"
+    },
+    {
+      "id": "node_m9c3",
+      "clauseReferences": [[9, 3]],
+      "person": "B",
+      "text": "The skills and knowledge gained from some courses will benefit more people in multiple ways"
+    },
+    {
+      "id": "node_m9c4",
+      "clauseReferences": [[9, 4]],
+      "person": "B",
+      "text": "High school programs and on-the-job training may provide some level of knowledge"
+    },
+    {
+      "id": "node_m9c5",
+      "clauseReferences": [[9, 5]],
+      "person": "B",
+      "text": "But some level of knowledge does not compare to the comprehensive education offered at universities."
+    },
+    {
+      "id": "node_m10c0",
+      "clauseReferences": [[10, 0]],
+      "person": "A",
+      "text": "Some people need to go to work after high school"
+    },
+    {
+      "id": "node_m11c0",
+      "clauseReferences": [[11, 0]],
+      "person": "A",
+      "text": "Many African Americans live below the poverty level"
+    },
+    {
+      "id": "node_m11c1",
+      "clauseReferences": [[11, 1]],
+      "person": "A",
+      "text": "They need substantial employment after high school"
+    },
+    {
+      "id": "node_m11c2",
+      "clauseReferences": [[11, 2]],
+      "person": "A",
+      "text": "This makes Votech important."
+    },
+    {
+      "id": "node_m12c0",
+      "clauseReferences": [[12, 0]],
+      "person": "A",
+      "text": "College degrees can take five to six years"
+    },
+    {
+      "id": "node_m12c1",
+      "clauseReferences": [[12, 1]],
+      "person": "A",
+      "text": "Students will need a living wage until graduation"
+    },
+    {
+      "id": "node_m13c0",
+      "clauseReferences": [[13, 0]],
+      "person": "A",
+      "text": "More money should be spent educating students at a high school level"
+    },
+    {
+      "id": "node_m13c1",
+      "clauseReferences": [[13, 1]],
+      "person": "A",
+      "text": "Because student loans leave students in debt."
+    },
+    {
+      "id": "node_m14c0",
+      "clauseReferences": [[14, 0]],
+      "person": "A",
+      "text": "Young adults cannot pursue the American Dream until later in life because of student loan debt"
+    },
+    {
+      "id": "node_m14c1",
+      "clauseReferences": [[14, 1]],
+      "person": "A",
+      "text": "Student loan debt will not allow young adults to purchase a home."
+    }
+  ],
+  "links": [
+    {
+      "relationship": "attack",
+      "source": "node_m7c0",
+      "target": "node_m4c0_m10c1"
+    },
+    { "relationship": "support", "source": "node_m6c1", "target": "node_m1c1" },
+    {
+      "relationship": "support",
+      "source": "node_m8c2_m9c2",
+      "target": "node_m8c1"
+    },
+    { "relationship": "support", "source": "node_m9c3", "target": "node_m8c1" },
+    {
+      "relationship": "support",
+      "source": "node_m10c0",
+      "target": "node_m1c1"
+    },
+    {
+      "relationship": "support",
+      "source": "node_m12c1",
+      "target": "node_m10c0"
+    },
+    {
+      "relationship": "support",
+      "source": "node_m14c0",
+      "target": "node_m13c1"
+    },
+    {
+      "relationship": "support",
+      "source": "node_m14c1",
+      "target": "node_m13c1"
+    },
+    { "relationship": "support", "source": "node_m1c1", "target": "node_m1c0" },
+    {
+      "relationship": "support",
+      "source": "node_m13c1",
+      "target": "node_m13c0"
+    },
+    {
+      "relationship": "attack",
+      "source": "node_m4c0_m10c1",
+      "target": "node_m5c2_m9c0_m2c0_m0c0"
+    },
+    { "relationship": "support", "source": "node_m5c1", "target": "node_m7c0" },
+    { "relationship": "support", "source": "node_m7c1", "target": "node_m6c0" },
+    { "relationship": "support", "source": "node_m9c4", "target": "node_m6c1" },
+    { "relationship": "support", "source": "node_m9c5", "target": "node_m7c0" },
+    {
+      "relationship": "support",
+      "source": "node_m11c1",
+      "target": "node_m10c0"
+    },
+    {
+      "relationship": "support",
+      "source": "node_m9c1_m2c1",
+      "target": "node_m5c2_m9c0_m2c0_m0c0"
+    },
+    {
+      "relationship": "attack",
+      "source": "node_m5c0",
+      "target": "node_m4c0_m10c1"
+    },
+    {
+      "relationship": "attack",
+      "source": "node_m5c3",
+      "target": "node_m4c0_m10c1"
+    }
+  ],
+  "ignored": [],
+  "messages": [
+    {
+      "person": "assistant",
+      "text": "More people should be encouraged to go to University",
+      "clauses": ["More people should be encouraged to go to University"]
+    },
+    {
+      "person": "A",
+      "text": "I do not agree because some people need job training.",
+      "clauses": ["I do not agree", "Because some people need job training."]
+    },
+    {
+      "person": "B",
+      "text": "I believe that more people should be encouraged to go to University, as the education provided is often essential for pursuing a successful career.",
+      "clauses": [
+        "More people should be encouraged to go to University",
+        "As the education provided at University is often essential for pursuing a successful career."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "Some people need technical training like for electricians",
+      "clauses": [
+        "Some people need technical training",
+        "Like for electricians"
+      ]
+    },
+    {
+      "person": "A",
+      "text": "Electricians do not need to go to college",
+      "clauses": ["Electricians do not need to go to college"]
+    },
+    {
+      "person": "B",
+      "text": "I am in full support of encouraging more people to pursue a university education, as it provides a valuable base of knowledge and skills, which will be essential for them to pursue successful careers, as well as technical fields such as electrical engineering.",
+      "clauses": [
+        "I am in full support of encouraging more people to pursue a university education",
+        "A university education provides a valuable base of knowledge and skill",
+        "hich will be essential for more people to pursue successful careers",
+        "A university education will be essential for more people to pursue technical fields such as electrical engineering."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "There are high school programs and on the job training.",
+      "clauses": [
+        "There are high school programs",
+        "There is on the job training."
+      ]
+    },
+    {
+      "person": "B",
+      "text": "Universities offer an opportunity for individuals to obtain a comprehensive education, which may be more beneficial than any high school program or on the job training.",
+      "clauses": [
+        "Universities offer an opportunity for individuals to obtain a comprehensive education",
+        "This comprehensive education may be more beneficial than any high school program or on the job training."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "To obtain a degree you have to take courses that have nothing to do with your choice of degree",
+      "clauses": [
+        "To obtain a degre",
+        "ou have to take courses",
+        "Some courses have nothing to do with your choice of degree"
+      ]
+    },
+    {
+      "person": "B",
+      "text": "I strongly believe that more people should be encouraged to go to University, as the education obtained there is essential for pursuing a successful career. Even if some courses may not directly relate to their field of choice, the skills and knowledge gained from them will benefit them in multiple ways. High school programs and on-the-job training may provide some level of knowledge but it does not compare to the comprehensive education offered at universities.",
+      "clauses": [
+        "I strongly believe that more people should be encouraged to go to University",
+        "As the education obtained there is essential for pursuing a successful career",
+        "Even if some courses may not directly relate to more people's field of choice",
+        "The skills and knowledge gained from some courses will benefit more people in multiple ways",
+        "High school programs and on-the-job training may provide some level of knowledge",
+        "But some level of knowledge does not compare to the comprehensive education offered at universities."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "Some people need to go to work after high school and cannot go to college. ",
+      "clauses": [
+        "Some people need to go to work after high school",
+        "They cannot go to college."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "Many african americans live below the poverty level and need substantial employment after high school which makes Votech important.",
+      "clauses": [
+        "Many African Americans live below the poverty level",
+        "They need substantial employment after high school",
+        "This makes Votech important."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "College degrees can take five to six years and students will need a living wage until graduation.",
+      "clauses": [
+        "College degrees can take five to six years",
+        "Students will need a living wage until graduation"
+      ]
+    },
+    {
+      "person": "A",
+      "text": "More money should be spent educating students at a high school level because student loans leave students in debt.",
+      "clauses": [
+        "More money should be spent educating students at a high school level",
+        "Because student loans leave students in debt."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "Young adults cannot pursue the American Dream until later in life because student loan debt will not allow them to purchase a home. ",
+      "clauses": [
+        "Young adults cannot pursue the American Dream until later in life because of student loan debt",
+        "Student loan debt will not allow young adults to purchase a home."
+      ]
+    }
+  ]
+}

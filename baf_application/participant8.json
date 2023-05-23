@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "node_m0c0",
+      "clauseReferences": [[0, 0]],
+      "person": "assistant",
+      "text": "Religion is not overall harmful"
+    },
+    {
+      "id": "node_m1c0",
+      "clauseReferences": [[1, 0]],
+      "person": "A",
+      "text": "Religion is harmful"
+    },
+    {
+      "id": "node_m4c0_m2c0",
+      "clauseReferences": [
+        [4, 0],
+        [2, 0]
+      ],
+      "person": "B",
+      "text": "Religion can create a positive impact on society"
+    },
+    {
+      "id": "node_m2c1",
+      "clauseReferences": [[2, 1]],
+      "person": "B",
+      "text": "Through religion promotion of social and moral values."
+    },
+    {
+      "id": "node_m3c0",
+      "clauseReferences": [[3, 0]],
+      "person": "A",
+      "text": "The rules that religion imposes are not always moral"
+    },
+    {
+      "id": "node_m4c1",
+      "clauseReferences": [[4, 1]],
+      "person": "B",
+      "text": "But Religion set of rules and guidance may not always be perceived as moral by all."
+    },
+    {
+      "id": "node_m5c0",
+      "clauseReferences": [[5, 0]],
+      "person": "A",
+      "text": "Different religions follow different moral rules"
+    },
+    {
+      "id": "node_m5c1",
+      "clauseReferences": [[5, 1]],
+      "person": "A",
+      "text": "These moral rules can sometimes conflict and promote dissension"
+    }
+  ],
+  "links": [
+    {
+      "relationship": "support",
+      "source": "node_m2c1",
+      "target": "node_m4c0_m2c0"
+    },
+    { "relationship": "support", "source": "node_m4c1", "target": "node_m3c0" },
+    {
+      "relationship": "attack",
+      "source": "node_m4c0_m2c0",
+      "target": "node_m1c0"
+    },
+    { "relationship": "attack", "source": "node_m3c0", "target": "node_m2c1" },
+    { "relationship": "attack", "source": "node_m1c0", "target": "node_m0c0" }
+  ],
+  "ignored": [],
+  "messages": [
+    {
+      "person": "assistant",
+      "text": "Religion is not overall harmful",
+      "clauses": ["Religion is not overall harmful"]
+    },
+    {
+      "person": "A",
+      "text": "Religion is harmful",
+      "clauses": ["Religion is harmful"]
+    },
+    {
+      "person": "B",
+      "text": "Religion can create a positive impact on society through its promotion of social and moral values.",
+      "clauses": [
+        "Religion can create a positive impact on society",
+        "Through religion promotion of social and moral values."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "The rules that religion imposes are not always moral",
+      "clauses": ["The rules that religion imposes are not always moral"]
+    },
+    {
+      "person": "B",
+      "text": "Religion can have a positive influence on society through promoting moral values, but its set of rules and guidance may not always be perceived as moral by all.",
+      "clauses": [
+        "Religion can have a positive influence on society through promoting moral values",
+        "But Religion set of rules and guidance may not always be perceived as moral by all."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "Different religions follow different moral rules that can sometimes conflict and promote dissension",
+      "clauses": [
+        "Different religions follow different moral rules",
+        "These moral rules can sometimes conflict and promote dissension"
+      ]
+    }
+  ]
+}

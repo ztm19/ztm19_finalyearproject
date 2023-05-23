@@ -1,0 +1,88 @@
+{
+  "nodes": [
+    {
+      "id": "node_m0c0",
+      "clauseReferences": [[0, 0]],
+      "person": "assistant",
+      "text": "Bullies should not face legal repercussions"
+    },
+    {
+      "id": "node_m1c0",
+      "clauseReferences": [[1, 0]],
+      "person": "A",
+      "text": "Please provide more information."
+    },
+    {
+      "id": "node_m2c0",
+      "clauseReferences": [[2, 0]],
+      "person": "B",
+      "text": "Bullying should be addressed through disciplinary action"
+    },
+    {
+      "id": "node_m2c1",
+      "clauseReferences": [[2, 1]],
+      "person": "B",
+      "text": "Instead of imposing legal repercussions on bullying"
+    },
+    {
+      "id": "node_m3c0",
+      "clauseReferences": [[3, 0]],
+      "person": "A",
+      "text": "I am not more interested"
+    },
+    {
+      "id": "node_m4c0",
+      "clauseReferences": [[4, 0]],
+      "person": "B",
+      "text": "Bullies should face legal repercussions in order to prevent further bullying and protect victims"
+    },
+    {
+      "id": "node_m4c1",
+      "clauseReferences": [[4, 1]],
+      "person": "B",
+      "text": "As disciplinary action alone is insufficient to address the issue"
+    }
+  ],
+  "links": [
+    { "relationship": "support", "source": "node_m4c1", "target": "node_m4c0" },
+    { "relationship": "support", "source": "node_m1c0", "target": "node_m0c0" },
+    { "relationship": "support", "source": "node_m3c0", "target": "node_m1c0" },
+    { "relationship": "support", "source": "node_m2c1", "target": "node_m0c0" },
+    { "relationship": "attack", "source": "node_m2c0", "target": "node_m0c0" },
+    { "relationship": "attack", "source": "node_m4c0", "target": "node_m0c0" }
+  ],
+  "ignored": [],
+  "messages": [
+    {
+      "person": "assistant",
+      "text": "Bullies should not face legal repercussions",
+      "clauses": ["Bullies should not face legal repercussions"]
+    },
+    {
+      "person": "A",
+      "text": "please provide more information ",
+      "clauses": ["Please provide more information."]
+    },
+    {
+      "person": "B",
+      "text": "Bullying should be addressed through disciplinary action instead of imposing legal repercussions.",
+      "clauses": [
+        "Bullying should be addressed through disciplinary action",
+        "Instead of imposing legal repercussions on bullying"
+      ]
+    },
+    {
+      "person": "A",
+      "text": "I am not more interested",
+      "clauses": ["I am not more interested"]
+    },
+    {
+      "person": "B",
+      "text": "Bullies should face legal repercussions in order to prevent further bullying and protect victims, as disciplinary action alone is insufficient to address the issue.",
+      "clauses": [
+        "Bullies should face legal repercussions in order to prevent further bullying and protect victims",
+        "As disciplinary action alone is insufficient to address the issue"
+      ]
+    }
+  ]
+}

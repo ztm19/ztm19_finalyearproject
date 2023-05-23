@@ -1,0 +1,46 @@
+{
+  "nodes": [
+    {
+      "id": "node_m0c0",
+      "clauseReferences": [[0, 0]],
+      "person": "assistant",
+      "text": "Bullies should not face legal repercussions"
+    },
+    {
+      "id": "node_m1c0",
+      "clauseReferences": [[1, 0]],
+      "person": "A",
+      "text": "It really matters the extent of the bullying"
+    },
+    {
+      "id": "node_m1c1",
+      "clauseReferences": [[1, 1]],
+      "person": "A",
+      "text": "If the bullying's hate-related or violent"
+    },
+    {
+      "id": "node_m1c2",
+      "clauseReferences": [[1, 2]],
+      "person": "A",
+      "text": "Then the bully should be prosecuted."
+    }
+  ],
+  "links": [],
+  "ignored": [],
+  "messages": [
+    {
+      "person": "assistant",
+      "text": "Bullies should not face legal repercussions",
+      "clauses": ["Bullies should not face legal repercussions"]
+    },
+    {
+      "person": "A",
+      "text": "It really matters the extent of the bullying; if it's hate-related or violent, then the bully should be prosecuted. ",
+      "clauses": [
+        "It really matters the extent of the bullying",
+        "If the bullying's hate-related or violent",
+        "Then the bully should be prosecuted."
+      ]
+    }
+  ]
+}

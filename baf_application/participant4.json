@@ -1,0 +1,128 @@
+{
+  "nodes": [
+    {
+      "id": "node_m0c0",
+      "clauseReferences": [[0, 0]],
+      "person": "assistant",
+      "text": "Fewer people should be encouraged to go to University"
+    },
+    {
+      "id": "node_m1c0",
+      "clauseReferences": [[1, 0]],
+      "person": "A",
+      "text": "Anyone that can pay for University should be able to go to additional schooling."
+    },
+    {
+      "id": "node_m2c0_m6c0",
+      "clauseReferences": [
+        [2, 0],
+        [6, 0]
+      ],
+      "person": "B",
+      "text": "Universities should only be accessible to those who have the knowledge and ability to make use of Universities."
+    },
+    {
+      "id": "node_m3c0",
+      "clauseReferences": [[3, 0]],
+      "person": "A",
+      "text": "The requirements would depend on the school and program"
+    },
+    {
+      "id": "node_m3c1",
+      "clauseReferences": [[3, 1]],
+      "person": "A",
+      "text": "Not everyone needs to be a doctor or lawyer"
+    },
+    {
+      "id": "node_m4c0",
+      "clauseReferences": [[4, 0]],
+      "person": "B",
+      "text": "Higher education should be reserved for those with a clear academic and professional ambition."
+    },
+    {
+      "id": "node_m5c0",
+      "clauseReferences": [[5, 0]],
+      "person": "A",
+      "text": "It seems that you are excluding trade schools in your definition of higher education."
+    },
+    {
+      "id": "node_m6c1",
+      "clauseReferences": [[6, 1]],
+      "person": "B",
+      "text": "In contras"
+    },
+    {
+      "id": "node_m6c2",
+      "clauseReferences": [[6, 2]],
+      "person": "B",
+      "text": "he accessibility of trade schools should not be limited by prerequisites regarding academic abilities."
+    }
+  ],
+  "links": [
+    { "relationship": "attack", "source": "node_m1c0", "target": "node_m0c0" },
+    {
+      "relationship": "attack",
+      "source": "node_m2c0_m6c0",
+      "target": "node_m1c0"
+    },
+    { "relationship": "attack", "source": "node_m4c0", "target": "node_m1c0" },
+    {
+      "relationship": "attack",
+      "source": "node_m6c2",
+      "target": "node_m2c0_m6c0"
+    }
+  ],
+  "ignored": [],
+  "messages": [
+    {
+      "person": "assistant",
+      "text": "Fewer people should be encouraged to go to University",
+      "clauses": ["Fewer people should be encouraged to go to University"]
+    },
+    {
+      "person": "A",
+      "text": "I think anyone that can pay for it, should be able to go to additional schooling.",
+      "clauses": [
+        "Anyone that can pay for University should be able to go to additional schooling."
+      ]
+    },
+    {
+      "person": "B",
+      "text": "Universities should only be accessible to those who have the knowledge and ability to make use of it.",
+      "clauses": [
+        "Universities should only be accessible to those who have the knowledge and ability to make use of Universities."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "The requirements would depend on the school and program not everyone needs to be a doctor or lawyer, right?",
+      "clauses": [
+        "The requirements would depend on the school and program",
+        "Not everyone needs to be a doctor or lawyer"
+      ]
+    },
+    {
+      "person": "B",
+      "text": "Higher education should be reserved for those with a clear academic and professional ambition.",
+      "clauses": [
+        "Higher education should be reserved for those with a clear academic and professional ambition."
+      ]
+    },
+    {
+      "person": "A",
+      "text": "So it seems that you are excluding trade schools in your definition of \"higher education\"",
+      "clauses": [
+        "It seems that you are excluding trade schools in your definition of higher education."
+      ]
+    },
+    {
+      "person": "B",
+      "text": "Universities should only be available to those who possess the knowledge and skills necessary to maximize their use; in contrast, the accessibility of trade schools should not be limited by prerequisites regarding academic abilities.",
+      "clauses": [
+        "Universities should only be available to those who possess the knowledge and skills necessary to maximize their use",
+        "In contras",
+        "he accessibility of trade schools should not be limited by prerequisites regarding academic abilities."
+      ]
+    }
+  ]
+}
