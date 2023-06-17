@@ -1,8 +1,9 @@
 import json
 from clyngor import ASP
+from constants import STABLE, COMPLETE, ADMISSIBLE
 
 # Read the file with arguments and relationships
-FILENAME = "participant1.json"
+FILENAME = "participant4.json"
 file = open(FILENAME)
 dict = json.load(file)
 
@@ -35,17 +36,6 @@ defeat(X,Y) :- att(X,Y).\n\
 defeated(X) :- in(Y), defeat(Y,X).\n\
 not_defended(X) :- defeat(Y,X), not defeated(Y).\n"
 
-# Construct the ILASP solution for each semantics
-STABLE = "out(X) :- defeated(X).\n\
-in(X) :- arg(X), not defeated(X).\n"
-
-ADMISSIBLE = " :- not_defended(X), not out(X).\n\
-out(X) :- arg(X), not in(X).\n\
-in(X) :- arg(X), not out(X), not defeated(X).\n"
-
-COMPLETE = "out(X) :- not_defended(X).\n\
-in(X) :- arg(X), not defeated(X), not not_defended(X)."
-
 def print_answers(asp, semantics):
     '''
     Prints the accepted arguments given the ASP encoding
@@ -75,5 +65,5 @@ def print_answers(asp, semantics):
 
 
 print_answers(asp_encoding+STABLE, "Stable")
-print_answers(asp_encoding+ADMISSIBLE, "Admissible")
+# print_answers(asp_encoding+ADMISSIBLE, "Admissible")
 print_answers(asp_encoding+COMPLETE, "Complete")
