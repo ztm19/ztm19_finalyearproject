@@ -1,3 +1,5 @@
+% Examples
+
 #pos({out(a), out(b)},
      {in(a), in(b)},{
 arg(a).
@@ -352,10 +354,12 @@ att(a3,a4).
 }).
 
 % Definitions
+
 defeated(X) :- in(Y), att(Y,X). 
 
 not_defended(X) :- att(Y,X), not defeated(Y). 
 
+% Mode declarations
 
 #modeh(in(var(arg))).
 #modeh(out(var(arg))).

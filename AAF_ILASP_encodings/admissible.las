@@ -17,7 +17,7 @@ arg(b).
      {out(a), in(b)},{
 arg(a).
 arg(b).
-att(a, b).
+att(a,b).
 att(b,a).
 }).
 
@@ -27,8 +27,8 @@ arg(a).
 arg(b).
 arg(c).
 
-att(a, b).
-att(b, c).
+att(a,b).
+att(b,c).
 }).
 
 #pos({in(a),out(b),in(c),out(d)},
@@ -37,10 +37,9 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(b, c).
+att(a,b).
+att(b,c).
 }).
-
 
 #neg({in(a),in(b),out(c),out(d)},
      {},{
@@ -69,6 +68,7 @@ att(c,d).
 }).
  
 % Definitions
+
 defeated(X) :- in(Y), att(Y,X). 
 
 not_defended(X) :- att(Y,X), not defeated(Y). 

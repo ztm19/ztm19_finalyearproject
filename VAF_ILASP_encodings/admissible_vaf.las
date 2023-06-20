@@ -17,7 +17,7 @@ arg(b).
      {out(a), in(b)},{
 arg(a).
 arg(b).
-att(a, b).
+att(a,b).
 att(b,a).
 }).
 
@@ -27,8 +27,8 @@ arg(a).
 arg(b).
 arg(c).
 
-att(a, b).
-att(b, c).
+att(a,b).
+att(b,c).
 }).
 
 #pos({in(a),out(b),in(c),out(d)},
@@ -37,10 +37,9 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(b, c).
+att(a,b).
+att(b,c).
 }).
-
 
 #neg({in(a),in(b),out(c),out(d)},
      {},{
@@ -67,7 +66,6 @@ att(b,c).
 att(a,c).
 att(c,d).
 }).
-
  
 % Definitions
 
@@ -76,7 +74,6 @@ valpref(X,Y) :- valpref(X,Z), valpref(Z,Y).
 pref(X,Y) :- valpref(U,V),
                  val(X,U),
                  val(Y,V).
-
 pref(X,Y) :- pref(X,Z), pref(Z,Y).
 
 defeat(X,Y) :- att(X,Y), not pref(Y,X).

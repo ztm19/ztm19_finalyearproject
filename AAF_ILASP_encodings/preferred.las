@@ -1,3 +1,5 @@
+% Examples
+
 #pos({in(b), out(a)},
      {out(b), in(a)},{
 arg(a).
@@ -18,7 +20,6 @@ arg(a).
 arg(b).
 att(a,b).
 }).
-
 
 #pos({in(a),out(b),in(c),out(d)},
      {out(a),in(b),out(c),in(d)},{
@@ -56,7 +57,6 @@ att(c,a).
 att(d,b).
 att(b,d).
 }).
-
 
 #pos({in(a),out(b),out(c),out(d),in(e)},
      {out(a),in(b),in(c),in(d),out(e)},{
@@ -227,7 +227,6 @@ att(c,e).
 att(d,e).
 }).
 
-
 #neg({out(a),out(b),out(c),out(d),out(e)},
      {},{
 arg(a).
@@ -243,12 +242,13 @@ att(c,e).
 att(d,e).
 }).
 
-
 % Definitions
+
 defeated(X) :- in(Y), att(Y,X). 
 
 not_defended(X) :- att(Y,X), not defeated(Y). 
 
+% Mode declarations 
 
 #modeh(in(var(arg))).
 #modeh(out(var(arg))).

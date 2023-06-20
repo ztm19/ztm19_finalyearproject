@@ -78,7 +78,6 @@ att(b, c).
 att(d, c).
 }).
 
-
 #neg({in(a), in(b), in(c), in(d)},
      {},{
 arg(a).
@@ -106,6 +105,7 @@ att(c,d).
 }).
 
 % Examples containing support
+
 #pos({in(a), out(b), in(c)},
      {out(a), in(b), out(c)},{
 arg(a).
@@ -205,8 +205,6 @@ support(d,c).
 support(b,c).
 }).
 
-
-
 #neg({in(a), in(b), out(c), out(d)},
      {},{
 arg(a).
@@ -247,6 +245,7 @@ support(d,b).
 }).
 
 % Definitions
+
 support(X,Z) :- support(X,Y), support(Y,Z).
 
 supported(X) :- support(Y,X), in(Y).
@@ -260,6 +259,7 @@ defeated(X) :- in(Y), defeat(Y,X).
 not_defended(X) :- defeat(Y,X), not defeated(Y).
 
 % Mode declarations
+
 #modeh(in(var(arg))).
 #modeh(out(var(arg))).
 

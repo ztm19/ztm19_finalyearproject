@@ -1,4 +1,5 @@
 % Examples
+
 #pos({in(a), in(b), in(c)},
      {out(a), out(b), out(c)},{
 arg(a).
@@ -10,16 +11,16 @@ arg(c).
      {out(a), in(b)},{
 arg(a).
 arg(b).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 }).
 
 #pos({in(b), out(a)},
      {out(b), in(a)},{
 arg(a).
 arg(b).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 }).
 
 #pos({in(a),out(b),in(c)},
@@ -27,9 +28,8 @@ att(b, a).
 arg(a).
 arg(b).
 arg(c).
-
-att(a, b).
-att(b, c).
+att(a,b).
+att(b,c).
 }).
 
 #pos({in(a),out(b),in(c),out(d)},
@@ -38,9 +38,9 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(b, c).
-att(c, d).
+att(a,b).
+att(b,c).
+att(c,d).
 att(b,d).
 }).
 
@@ -49,10 +49,9 @@ att(b,d).
 arg(b).
 arg(c).
 arg(d).
-att(b, c).
-att(d, c).
+att(b,c).
+att(d,c).
 }).
-
 
 #neg({in(a),out(b),in(c)},
      {},{
@@ -80,8 +79,8 @@ att(c,d).
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 support(c,a).
 }).
 
@@ -90,8 +89,8 @@ support(c,a).
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 support(a,c).
 }).
 
@@ -100,8 +99,8 @@ support(a,c).
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 support(a,c).
 }).
 
@@ -110,8 +109,8 @@ support(a,c).
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(a, c).
+att(a,b).
+att(a,c).
 support(c,b).
 }).
 
@@ -121,8 +120,8 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(a, c).
+att(a,b).
+att(a,c).
 support(d,c).
 support(c,b).
 }).
@@ -133,8 +132,8 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(a, c).
+att(a,b).
+att(a,c).
 support(d,c).
 support(b,c).
 }).
@@ -165,6 +164,8 @@ suport(a,c).
 support(d,b).
 }).
 
+% Definitions
+
 support(X,Z) :- support(X,Y), support(Y,Z).
 
 supported(X) :- support(Y,X), in(Y).
@@ -178,6 +179,7 @@ defeated(X) :- in(Y), defeat(Y,X).
 not_defended(X) :- defeat(Y,X), not defeated(Y).
 
 % Mode declarations
+
 #modeh(in(var(arg))).
 #modeh(out(var(arg))).
 

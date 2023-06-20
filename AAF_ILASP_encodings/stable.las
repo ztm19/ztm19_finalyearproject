@@ -11,16 +11,16 @@ arg(c).
      {out(a), in(b)},{
 arg(a).
 arg(b).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 }).
 
 #pos({in(b), out(a)},
      {out(b), in(a)},{
 arg(a).
 arg(b).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 }).
 
 #pos({in(a),out(b),in(c)},
@@ -28,9 +28,8 @@ att(b, a).
 arg(a).
 arg(b).
 arg(c).
-
-att(a, b).
-att(b, c).
+att(a,b).
+att(b,c).
 }).
 
 #pos({in(a),out(b),in(c),out(d)},
@@ -39,9 +38,9 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(b, c).
-att(c, d).
+att(a,b).
+att(b,c).
+att(c,d).
 att(b,d).
 }).
 
@@ -50,10 +49,9 @@ att(b,d).
 arg(b).
 arg(c).
 arg(d).
-att(b, c).
-att(d, c).
+att(b,c).
+att(d,c).
 }).
-
 
 #neg({in(a),out(b),in(c)},
      {},{
@@ -76,11 +74,13 @@ att(c,d).
 }).
 
 % Definitions
+
 defeated(X) :- in(Y), att(Y,X). 
 
 not_defended(X) :- att(Y,X), not defeated(Y). 
 
 % Mode declarations
+
 #modeh(in(var(arg))).
 #modeh(out(var(arg))).
 
