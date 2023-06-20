@@ -61,7 +61,7 @@ python test_semantics_ASP.py
 ```
 in the time_experiment folder.
 
-To compare with the time it takes $\mu$-toksia ([$\mu$-toksia website](https://bitbucket.org/andreasniskanen/mu-toksia/src/master/)) to find one extension, you have to install $\mu$-toksia and put the file test_semantics_mu_toksia.py from the time_experiment folder into the mu-toksia folder, which you will have after installing. Then run the command:
+To compare with the time it takes $\mu$-toksia ([mu-toksia website](https://bitbucket.org/andreasniskanen/mu-toksia/src/master/)) to find one extension, you have to install $\mu$-toksia and put the file test_semantics_mu_toksia.py from the time_experiment folder into the mu-toksia folder, which you will have after installing. Then run the command:
 ```bash
 python test_semantics_mu_toksia.py
 ```

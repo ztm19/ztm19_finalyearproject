@@ -577,6 +577,8 @@ support(16,15).
 att(17,15).
 }).
 
+% Definitions
+
 support(X,Z) :- support(X,Y), support(Y,Z).
 
 supported(X) :- support(Y,X), in(Y).
@@ -590,6 +592,7 @@ defeated(X) :- in(Y), defeat(Y,X).
 not_defended(X) :- defeat(Y,X), not defeated(Y).
 
 % Mode declarations
+
 #modeh(in(var(arg))).
 #modeh(out(var(arg))).
 
@@ -597,7 +600,9 @@ not_defended(X) :- defeat(Y,X), not defeated(Y).
 #modeb(out(var(arg))).
 #modeb(arg(var(arg)), (positive)).
 #modeb(att(var(arg), var(arg))).
+#modeb(support(var(arg))).
 #modeb(supported(var(arg))).
+#modeb(defeat(var(arg))).
 #modeb(defeated(var(arg))).
 #modeb(not_defended(var(arg))).
 
