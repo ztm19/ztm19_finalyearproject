@@ -4,8 +4,9 @@ from clyngor import ASP
 
 def check_consistency(semantics_asp, semantics_aspartix, semantics_name, examples_directory):
     '''
-    Prints the accepted arguments given the ASP encoding
-    and the type of semantics.
+    Checks for how many of the example files, the answer sets of our learned program
+    are the same as the ASPARTIX answer sets. Also, prints the name of the files for
+    which they are not the same (if such exist). For stable, complete and admissible semantics.
     '''
     print(f"{semantics_name} semantics")
     count_equal = 0
@@ -53,7 +54,7 @@ def check_consistency(semantics_asp, semantics_aspartix, semantics_name, example
             # Sort the whole list of answer sets so we can compare
             aspartix_all_ins.sort()
 
-            # For all answer sets of the ASPARTIX program, find just the
+            # For all answer sets of the our learned program, find just the
             # arguments that are in and sort them, so they are easy to compare
             for answer in asp_answers:
                 asp_ins = []
@@ -64,8 +65,6 @@ def check_consistency(semantics_asp, semantics_aspartix, semantics_name, example
                         asp_ins.append(element[1][0])
 
                 asp_ins.sort()
-
-                # print(asp_ins)
                 asp_all_ins.append(asp_ins)
 
             # Sort the whole list of answer sets so we can compare
@@ -84,8 +83,9 @@ def check_consistency(semantics_asp, semantics_aspartix, semantics_name, example
 
 def check_consistency_no_aspartix_base(semantics_asp, semantics_aspartix, semantics_name, examples_directory):
     '''
-    Prints the accepted arguments given the ASP encoding
-    and the type of semantics.
+    Checks for how many of the example files, the answer sets of our learned program
+    are the same as the ASPARTIX answer sets. Also, prints the name of the files for
+    which they are not the same (if such exist). For preferred and grounded semantics.
     '''
     print(f"{semantics_name} semantics")
     count_equal = 0

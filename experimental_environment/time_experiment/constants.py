@@ -5,7 +5,7 @@ out(X) :- not in(X), arg(X).\n\
 defeated(X) :- in(Y), att(Y,X).\n\
 not_defended(X) :- att(Y,X), not defeated(Y).\n"
 
-# Add the definitions of defeated and not_defended as common for our program
+# The definitions of defeated and not_defended are common for our encodings
 ASP_BASE = "defeated(X) :- in(Y), att(Y,X).\n\
 not_defended(X) :- att(Y,X), not defeated(Y).\n"
 
@@ -38,7 +38,6 @@ ADMISSIBLE_ASPARTIX = ":- in(X), not_defended(X).\n"
 COMPLETE_ASPARTIX = ":- in(X), not_defended(X).\n\
 :- out(X), not not_defended(X).\n"
 
-# Construct ASPARTIX solution to use as baseline
 GROUNDED_ASPARTIX = "lt(X,Y) :- arg(X),arg(Y), X<Y.\n\
 nsucc(X,Z) :- lt(X,Y), lt(Y,Z).\n\
 succ(X,Y) :- lt(X,Y), not nsucc(X,Y).\n\
@@ -53,7 +52,6 @@ defended_upto(X,Y) :- succ(Z,Y), defended_upto(X,Z), in(V), att(V,Y), att(Y,X).\
 defended(X) :- sup(Y), defended_upto(X,Y).\n\
 in(X) :- defended(X).\n"
 
-# Construct ASPARTIX solution to use as baseline
 PREFERRED_ASPARTIX = "in(X) :- not out(X), arg(X).\n\
 out(X) :- not in(X), arg(X).\n\
 :- in(X), in(Y), att(X,Y).\n\

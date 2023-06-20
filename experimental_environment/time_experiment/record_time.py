@@ -4,8 +4,8 @@ import time
 
 def record_time_no_aspartix_base(semantics_asp, semantics_aspartix, semantics_name, examples_directory):
     '''
-    Prints the accepted arguments given the ASP encoding
-    and the type of semantics.
+    Records the time it takes to compute one extension for the given semantics using
+    our encoding and the ASPARTIX encoding. Works for the preferred and the grounded semantics.
     '''
     print(f"{semantics_name} semantics")
 
@@ -25,6 +25,7 @@ def record_time_no_aspartix_base(semantics_asp, semantics_aspartix, semantics_na
 
             file.close()
 
+            # Find an extension using our learned ASP encoding for the semantics
             print(f"{filename[:-4]} arguments")
             text_file = open("asp.lp", "w")
             n = text_file.write(asp_encoding)
@@ -33,7 +34,9 @@ def record_time_no_aspartix_base(semantics_asp, semantics_aspartix, semantics_na
             stream = os.popen('clingo asp.lp --heuristic=domain --enum=domrec')
             output = stream.read()
             print(f"ASP: {time.time()-start}s")
+            os.remove("asp.lp")
 
+            # Find an extension using the ASPARTIX encoding
             text_file = open("aspartix.lp", "w")
             n = text_file.write(aspartix_encoding)
             text_file.close()
@@ -41,14 +44,16 @@ def record_time_no_aspartix_base(semantics_asp, semantics_aspartix, semantics_na
             stream = os.popen('clingo aspartix.lp')
             output = stream.read()
             print(f"ASPARTIX: {time.time()-start}s")
+            os.remove("aspartix.lp")
 
             print("----------------------------------------")
 
 
 def record_time(semantics_asp, semantics_aspartix, semantics_name, examples_directory):
     '''
-    Prints the accepted arguments given the ASP encoding
-    and the type of semantics.
+    Records the time it takes to compute one extension for the given semantics using
+    our encoding and the ASPARTIX encoding. Works for the stable, the complete and the
+    admissible semantics.
     '''
     print(f"{semantics_name} semantics")
 
@@ -68,6 +73,7 @@ def record_time(semantics_asp, semantics_aspartix, semantics_name, examples_dire
 
             file.close()
 
+            # Find an extension using our learned ASP encoding for the semantics
             print(f"{filename[:-4]} arguments:")
             text_file = open("asp.lp", "w")
             n = text_file.write(asp_encoding)
@@ -76,7 +82,9 @@ def record_time(semantics_asp, semantics_aspartix, semantics_name, examples_dire
             stream = os.popen('clingo asp.lp')
             output = stream.read()
             print(f"ASP: {time.time()-start}s")
+            os.remove("asp.lp")
 
+            # Find an extension using the ASPARTIX encoding
             text_file = open("aspartix.lp", "w")
             n = text_file.write(aspartix_encoding)
             text_file.close()
@@ -84,14 +92,15 @@ def record_time(semantics_asp, semantics_aspartix, semantics_name, examples_dire
             stream = os.popen('clingo aspartix.lp')
             output = stream.read()
             print(f"ASPARTIX: {time.time()-start}s")
+            os.remove("aspartix.lp")
 
             print("----------------------------------------")
 
 
 def record_time_mu_toksia(semantics_name, semantics_short, examples_directory):
     '''
-    Prints the accepted arguments given the ASP encoding
-    and the type of semantics.
+    Records the time it takes to compute one extension for the given semantics using
+    mu-toksia. Works for the stable, the complete and the preferred semantics.
     '''
     print(f"{semantics_name} semantics")
 

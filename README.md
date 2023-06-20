@@ -46,7 +46,7 @@ ILASP --version=2 {semantics}.las
 ## Experimental Enviroment
 There are two types of experiments - accuracy and time experiments. The experiments are done in Python. They contain folders with example files - generated example frameworks to
 use for testing. They also have files with constants - the programs learned by ILASP for 
-each semantics and the encodings done by ASPARTIX ([ASPARTIX website](https://www.dbai.tuwien.ac.at/research/argumentation/aspartix/)). 
+each semantics and the encodings done by ASPARTIX ([ASPARTIX website](https://www.dbai.tuwien.ac.at/research/argumentation/aspartix/)). You will have to install [clyngor](https://github.com/Aluriak/clyngor) to be able to run the experiments.
 
 To test the accuracy of labeling extensions according to given semantics, against the 
 ASPARTIX labeling, run  
