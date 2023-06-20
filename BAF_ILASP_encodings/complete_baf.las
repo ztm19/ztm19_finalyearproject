@@ -232,7 +232,6 @@ not_defended(X) :- defeat(Y,X), not defeated(Y).
 #modeb(att(var(arg), var(arg))).
 #modeb(defeated(var(arg))).
 #modeb(supported(var(arg))).
-#modeb(support(var(arg))).
 #modeb(not_defended(var(arg))).
 
 #maxv(2). 

@@ -2,7 +2,7 @@ from constants import ADMISSIBLE_ASP, ADMISSIBLE_ASPARTIX, STABLE_ASP, STABLE_AS
 from check_consistency import check_consistency, check_consistency_no_aspartix_base
 
 # Directory containing the generated test frameworks
-DIRECTORY = 'examples_1'
+DIRECTORY = 'examples_1000'
 
 # Do the check for the stable semantics encoding
 stable_result = check_consistency(STABLE_ASP, STABLE_ASPARTIX, "Stable", DIRECTORY)
