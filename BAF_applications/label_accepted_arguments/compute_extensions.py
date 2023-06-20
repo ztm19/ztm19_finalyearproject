@@ -3,7 +3,7 @@ from clyngor import ASP
 from constants import STABLE, COMPLETE, ADMISSIBLE
 
 # Read the file with arguments and relationships
-FILENAME = "participant4.json"
+FILENAME = "example4.json"
 file = open(FILENAME)
 dict = json.load(file)
 
@@ -36,7 +36,7 @@ defeat(X,Y) :- att(X,Y).\n\
 defeated(X) :- in(Y), defeat(Y,X).\n\
 not_defended(X) :- defeat(Y,X), not defeated(Y).\n"
 
-def print_answers(asp, semantics):
+def print_accepted_arguments(asp, semantics):
     '''
     Prints the accepted arguments given the ASP encoding
     and the type of semantics.
@@ -46,7 +46,7 @@ def print_answers(asp, semantics):
     i = 1
 
     for answer in answers:
-        print(f"Accepted arguments - possibility {i}:")
+        print(f"Accepted arguments - extension {i}:")
         print(f"-------------------------------")
         ins = []
         answer_set = set(answer)
@@ -64,6 +64,6 @@ def print_answers(asp, semantics):
         i += 1
 
 
-print_answers(asp_encoding+STABLE, "Stable")
-# print_answers(asp_encoding+ADMISSIBLE, "Admissible")
-print_answers(asp_encoding+COMPLETE, "Complete")
+print_accepted_arguments(asp_encoding+STABLE, "Stable")
+print_accepted_arguments(asp_encoding+ADMISSIBLE, "Admissible")
+print_accepted_arguments(asp_encoding+COMPLETE, "Complete")
