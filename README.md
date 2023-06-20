@@ -66,8 +66,6 @@ To compare with the time it takes $\mu$-toksia ([$\mu$-toksia website](https://b
 python test_semantics_mu_toksia.py
 ```
 
-The file dl_requirements.txt is a Python environment file with the version of the packages we are using in the comparison with a Deep Learning algorithm (which is not included into this repository) ([Link to DL algorithm repo](https://github.com/DennisCraandijk/DL-abstract-argumentation))
-
 ## BAF Applications - Label Accepted Arguments
 This is an application, in which we take a JSON file, containing arguments and the relationships between them, extracted from a 2-person dialogue. We parse the JSON file and represent the framework that it contains in ASP. We then label the accepted arguments in this framework, based on a chosen semantics. There are several experimental settings - for example 1,2,3,4,5,6,7, containing a different argumentation framework. In the file compute_extensions.py, you can choose which example file to work with. To find the extensions for all semantics (or some of them, which can be chosen from the same file), run the command
 ```bash
