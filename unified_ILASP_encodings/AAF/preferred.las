@@ -19,7 +19,6 @@ arg(b).
 att(a,b).
 }).
 
-
 #pos({in(a),out(b),in(c),out(d)},
      {out(a),in(b),out(c),in(d)},{
 arg(a).
@@ -56,7 +55,6 @@ att(c,a).
 att(d,b).
 att(b,d).
 }).
-
 
 #pos({in(a),out(b),out(c),out(d),in(e)},
      {out(a),in(b),in(c),in(d),out(e)},{
@@ -227,7 +225,6 @@ att(c,e).
 att(d,e).
 }).
 
-
 #neg({out(a),out(b),out(c),out(d),out(e)},
      {},{
 arg(a).
@@ -244,18 +241,26 @@ att(d,e).
 }).
 
 % Definitions
+
 support(X,Z) :- support(X,Y), support(Y,Z).
+
 supported(X) :- support(Y,X), in(Y).
+
 valpref(X,Y) :- valpref(X,Z), valpref(Z,Y).
+
 pref(X,Y) :- valpref(U,V), val(X,U), val(Y,V).
 pref(X,Y) :- pref(X,Z), pref(Z,Y).
+
 defeat(X,Y) :- att(Z,Y), support(X,Z). 
 defeat(X,Y) :- att(X,Z), support(Z,Y). 
 defeat(X,Y) :- att(X,Y), not pref(Y,X).
+
 defeated(X) :- in(Y), defeat(Y,X).
+
 not_defended(X) :- defeat(Y,X), not defeated(Y).
 
 % Mode declarations
+
 #modeh(in(var(arg))).
 #modeh(out(var(arg))).
 

@@ -27,9 +27,8 @@ att(b,a).
 arg(a).
 arg(b).
 arg(c).
-
-att(a, b).
-att(b, c).
+att(a,b).
+att(b,c).
 }).
 
 #pos({in(a),out(b),in(c),out(d)},
@@ -38,11 +37,10 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(b, c).
-att(a, d).
+att(a,b).
+att(b,c).
+att(a,d).
 }).
-
 
 #neg({in(a),in(b),in(c),in(d)},
      {},{
@@ -57,7 +55,6 @@ att(a,c).
 att(c,d).
 }).
 
-
 #neg({out(a),out(b),out(c),in(d)},
      {},{
 arg(a).
@@ -70,7 +67,6 @@ att(b,c).
 att(a,c).
 att(c,d).
 }).
-
  
 #neg({in(a),out(b),out(c),out(d)},
      {},{
@@ -86,24 +82,24 @@ att(c,d).
 }).
 
 % Examples containing support
+
 #pos({in(a), out(b), in(c)},
      {out(a), in(b), out(c)},{
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 support(c,a).
 }).
 
-
 #pos({in(a), out(b), in(c)},
      {out(a), in(b), out(c)},{
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 support(a,c).
 }).
 
@@ -112,8 +108,8 @@ support(a,c).
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 support(a,c).
 }).
 
@@ -122,8 +118,8 @@ support(a,c).
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 support(a,c).
 }).
 
@@ -132,8 +128,8 @@ support(a,c).
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(a, c).
+att(a,b).
+att(a,c).
 support(c,b).
 }).
 
@@ -143,8 +139,8 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(a, c).
+att(a,b).
+att(a,c).
 support(d,c).
 support(c,b).
 }).
@@ -155,8 +151,8 @@ arg(a).
 arg(b).
 arg(c).
 arg(d).
-att(a, b).
-att(a, c).
+att(a,b).
+att(a,c).
 support(d,c).
 support(b,c).
 }).
@@ -166,8 +162,8 @@ support(b,c).
 arg(a).
 arg(b).
 arg(c).
-att(a, b).
-att(b, a).
+att(a,b).
+att(b,a).
 support(a,c).
 }).
 
@@ -211,18 +207,26 @@ support(d,b).
 }).
 
 % Definitions
+
 support(X,Z) :- support(X,Y), support(Y,Z).
+
 supported(X) :- support(Y,X), in(Y).
+
 valpref(X,Y) :- valpref(X,Z), valpref(Z,Y).
+
 pref(X,Y) :- valpref(U,V), val(X,U), val(Y,V).
 pref(X,Y) :- pref(X,Z), pref(Z,Y).
+
 defeat(X,Y) :- att(Z,Y), support(X,Z). 
 defeat(X,Y) :- att(X,Z), support(Z,Y). 
 defeat(X,Y) :- att(X,Y), not pref(Y,X).
+
 defeated(X) :- in(Y), defeat(Y,X).
+
 not_defended(X) :- defeat(Y,X), not defeated(Y).
 
 % Mode declarations
+
 #modeh(in(var(arg))).
 #modeh(out(var(arg))).
 
@@ -233,6 +237,5 @@ not_defended(X) :- defeat(Y,X), not defeated(Y).
 #modeb(defeated(var(arg))).
 #modeb(supported(var(arg))).
 #modeb(not_defended(var(arg))).
-
 
 #maxv(2). 
