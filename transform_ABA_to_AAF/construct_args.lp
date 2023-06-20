@@ -12,7 +12,10 @@ holds(r) :- holds(s), holds(t).
 holds(s) :- holds(p).
 holds(t) :- holds(q).
 
+% For each assumption either assume it or not
 0{assume(X)}1 :- as(X).
+
+% If we assume an assumption, then it holds
 holds(X) :- assume(X).
 
 % Construct arguments with one root each

@@ -1,4 +1,4 @@
-% Second step of representing an ABA framework as an AA framework
+% Second step of representing an ABA framework as an AAF
 % Generate the attacks between arguments based on their structure
 
 % construct_args.lp constructs the arguments for the following ABA framework:
